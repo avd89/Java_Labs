@@ -8,7 +8,7 @@ package javalab05_01;
 import java.util.Scanner;
 
 /**
- * This is a part of the program that calculate dragonhead quantity
+ * This is a part of the program that calculate dragon head and eyes quantity
  * 15.03.2018
  * Group POIS1709v1
  * @author Aleksei Dubrovskii

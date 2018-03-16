@@ -7,7 +7,7 @@ package javalab05_01;
 import java.util.Scanner;
 /**
  *
- * This is a part of the program that calculate dragonhead quantity
+ * This is a part of the program that calculate dragon head and eyes quantity
  * 15.03.2018
  * Group POIS1709v1
  * @author Aleksei Dubrovskii
@@ -22,14 +22,19 @@ public class JavaLab05_01 {
         Scanner scanner = new Scanner(System.in);
         
         int N; //Dragon age
-        int result; //Dragon head quantity
+        int resultHead; //Dragon head quantity
+        int resultEyes; //Dragon eyes quantity
                             
         N = UserInput.input("Enter Dragon age "); //Enter dragon age
         
-        result = DragonHead.getDragonHeadQuantity(N); //calculate dragon head quantity
+        resultHead = DragonHead.getDragonHeadQuantity(N); //calculate dragon head quantity
         
-        View.print("dragon head quantity is " + result + "\n"); //output dragon head quantity
-                
+        resultEyes = DragonHead.getDragonEyesQuantity(resultHead);
+        
+        View.print("dragon head quantity is " + resultHead + "\n"); //output dragon heads quantity
+        
+        View.print("dragon eyes quantity is " + resultEyes + "\n"); //output dragon eyes quantity
+        
     }
     
 }

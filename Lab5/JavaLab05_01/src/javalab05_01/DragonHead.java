@@ -7,7 +7,7 @@ package javalab05_01;
 
 /**
  *
- * This is a part of the program that calculate dragonhead quantity
+ * This is a part of the program that calculate dragon head and eyes quantity
  * 15.03.2018
  * Group POIS1709v1
  * @author Aleksei Dubrovskii
@@ -39,4 +39,11 @@ public class DragonHead {
         return 0;
     }
     
+    public static int getDragonEyesQuantity(int dragonHeadQuantity){   //get dragon eyes quantity
+        
+        int dragonEyesQuantity = dragonHeadQuantity*2;
+        
+        return dragonEyesQuantity;
+    
+    }
 }
