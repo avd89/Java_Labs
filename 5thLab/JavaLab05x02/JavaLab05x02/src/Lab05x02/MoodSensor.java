@@ -16,24 +16,18 @@ import java.util.Random;
  */
 public class MoodSensor {  // emodji array
     
-  private static String[] arrayFace = {"\uD83D\uDE41","\uD83D\uDE42","\u263B","\u26D1","\uD83D\uDE04","\uD83D\uDE1A","\uD83D\uDE3C","\uD83D\uDE3D","\uD83D\uDE3F","\uD83D\uDE37","\uD83D\uDE36","\uD83D\uDE35","\uD83D\uDE34","\uD83D\uDE33","\uD83D\uDE32","\uD83D\uDE31","\uD83D\uDE30","\uD83D\uDE2F","\uD83D\uDE2E","\uD83D\uDE2D","\uD83D\uDE2C","\uD83D\uDE2B","\uD83D\uDE2A","\uD83D\uDE28"};
+  private static final String[] ARRAY_FACE = {"\uD83D\uDE41","\uD83D\uDE42","\u263B","\u26D1","\uD83D\uDE04","\uD83D\uDE1A","\uD83D\uDE3C","\uD83D\uDE3D","\uD83D\uDE3F","\uD83D\uDE37","\uD83D\uDE36","\uD83D\uDE35","\uD83D\uDE34","\uD83D\uDE33","\uD83D\uDE32","\uD83D\uDE31","\uD83D\uDE30","\uD83D\uDE2F","\uD83D\uDE2E","\uD83D\uDE2D","\uD83D\uDE2C","\uD83D\uDE2B","\uD83D\uDE2A","\uD83D\uDE28"};
       
    
-    public static int getRandomNumber(){   //get random number
+    public static int getRandomNumber(){   //get random number                          
         
-        Random random = new Random();              
-        
-        return random.nextInt(arrayFace.length);              
+        return new Random().nextInt(ARRAY_FACE.length);              
         
     }
     
-    public static String getMoodFace(){    //get random emodji
+    public static String getMoodFace(){    //get random emodji               
         
-        String MoodFace;
-        
-        MoodFace = arrayFace[getRandomNumber()];
-        
-        return MoodFace;
+        return ARRAY_FACE[getRandomNumber()];
         
     }
     

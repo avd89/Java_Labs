@@ -17,12 +17,17 @@ package Lab05x02;
  * @author Aleksei Dubrovskii
  */
 public class Lab05x02 {
-    public static void main(String[] args){
-        
-      String moodFace = MoodSensor.getMoodFace();  //get smile in unicode format
-      
-      View.print("NetBeans reaction for your code is " + moodFace + "\n");
-    
+
+    public static void main(String[] args) {
+
+        while (true) {
+            View.print("NetBeans reaction for your code is " + MoodSensor.getMoodFace() + "\n");  //get smile in unicode format 
+
+            if (!Complete.complete("Do you want to continue?")) {
+                break;
+            }
+
+        }
+
     }
-    
 }
