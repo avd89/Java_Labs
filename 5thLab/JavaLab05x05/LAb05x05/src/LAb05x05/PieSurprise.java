@@ -16,17 +16,16 @@ import java.util.Random;
  */
 public class PieSurprise {
     
-    static String[] pieSurprises = {"cherry", "cabbage", "potatoes", "currant", "prunes"};
+    static final String[] PIE_SURPRISES = {"cherry", "cabbage", "potatoes", "currant", "prunes"};
     
     public static int getRandomIntNumber(){
-        Random random = new Random();
-        
-        return random.nextInt(5);
+       
+        return new Random().nextInt(PIE_SURPRISES.length);
     }
     
     public static String getPieSurprise(){
         
-        return pieSurprises[getRandomIntNumber()];              
+        return PIE_SURPRISES[getRandomIntNumber()];              
     }
     
 }
