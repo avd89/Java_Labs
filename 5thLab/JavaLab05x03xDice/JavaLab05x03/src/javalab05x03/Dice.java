@@ -13,24 +13,19 @@ import java.util.Random;
  * @author Aleksei Dubrovskii
  */
 public class Dice {
-    public static int getDiceNumber(){
-        
-        Random random = new Random();
-        
-        return random.nextInt(6)+1;
-                        
+
+    public static final int MAX_DICE_VALUE = 6;
+
+    public static int getDiceNumber() {
+
+        return new Random().nextInt(MAX_DICE_VALUE) + 1;
+
     }
-    
-    public static int getTwoDiceNumber(){
-        
-        int dice1;
-        int dice2;
-                
-        dice1 = getDiceNumber();
-        dice2 = getDiceNumber();
-        
-        return dice1 + dice2;
-        
+
+    public static int getTwoDiceNumber() {
+
+        return getDiceNumber() + getDiceNumber();
+
     }
-    
+
 }

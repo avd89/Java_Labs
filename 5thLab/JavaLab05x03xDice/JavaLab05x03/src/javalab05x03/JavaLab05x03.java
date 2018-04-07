@@ -20,11 +20,14 @@ public class JavaLab05x03 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-        int result = Dice.getTwoDiceNumber();
-        
-        View.print("The result of dice game is " + result +"\n"); 
-                  
+
+        while (true) {
+            
+            View.print("The result of dice game is " + Dice.getTwoDiceNumber() + "\n");
+            
+            if (!Complete.complete("Do you want to continue?")) {  //repeated request
+                break;
+            }
+        }
     }
-    
 }
