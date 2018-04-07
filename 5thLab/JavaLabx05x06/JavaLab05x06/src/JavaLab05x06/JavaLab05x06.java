@@ -19,11 +19,9 @@ public class JavaLab05x06 {
     
     int day = UserInput.input("\nEnter day : ");
     int month = UserInput.input("\nEnter month : ");
-    int year = UserInput.input("\nEnter year : ");
-    
-    String nextDayDate = NextDayDate.getNextDayDate(day, month, year);
-    
-    View.print("Next date is : " + nextDayDate);   
+    int year = UserInput.input("\nEnter year : ");   
+        
+    View.print("Next date is : " + NextDayDate.getNextDayDate(day, month, year));   
         
     }
         
