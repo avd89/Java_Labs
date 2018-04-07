@@ -16,65 +16,44 @@ public class VowelRecognise {
 
     public static boolean recognizeVowelByFirstMethod(char letter) {
 
-        boolean answer = false;
+        letter = Character.toUpperCase(letter);
 
-        if (letter == 'A' || letter == 'E' || letter == 'I' || letter == 'O' || letter == 'U' || letter == 'Y' || letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u' || letter == 'y') {
-            answer = true;
-        }
+        return (letter == 'A' || letter == 'E' || letter == 'I' || letter == 'O' || letter == 'U' || letter == 'Y');
 
-        return answer;
     }
 
     public static boolean recogniseVowelBySecondMethod(char letter) {
-        boolean answer = false;
+
         letter = Character.toUpperCase(letter);
 
         switch (letter) {
             case 'A':
-                answer = true;
-                break;
+
             case 'E':
-                answer = true;
-                break;
+
             case 'I':
-                answer = true;
-                break;
+
             case 'O':
-                answer = true;
-                break;
+
             case 'U':
-                answer = true;
-                break;
+
             case 'Y':
-                answer = true;
-                break;
+
+                return true;
+
         }
-        return answer;
+        return false;
     }
 
     public static boolean recogniseVowelByThirdMethod(char letter) {
 
-        String vowel = "AEIOUYaeiouy";
-        String letterString = Character.toString(letter);
+        return "AEIOUYaeiouy".contains(Character.toString(letter));     //string contains() method searches the sequence of characters in this string. It returns true if sequence of char values are found in this string otherwise returns false.
 
-        return vowel.contains(letterString);     //string contains() method searches the sequence of characters in this string. It returns true if sequence of char values are found in this string otherwise returns false.
-
-//         boolean answer = false;
-//         String vowel = "AEIOUYaeiouy";
-//         String letterString = Character.toString(letter);
-//         
-//         if(vowel.contains(letterString)){
-//            answer = true;
-//         }
-//         
-//         return answer;
     }
 
     public static boolean recogniseVowelByFourthMethod(char letter) {
 
-        String vowel = "AEIOUYaeiouy";
-
-        return vowel.indexOf(letter) != -1;   // .indexOf returns the index within this string of the first occurrence of the specified character or -1, if the character does not occur.
+        return "AEIOUYaeiouy".indexOf(letter) != -1;   // .indexOf returns the index within this string of the first occurrence of the specified character or -1, if the character does not occur.
 
     }
 
