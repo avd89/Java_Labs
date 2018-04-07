@@ -27,26 +27,20 @@ public class PerfectNumber {
     
     public static boolean recognizePerfectNumber(int number){  //method that recognize perfect number
         int sum = 0;
-        boolean answer;
-        
+                
         for(int i = 1; i < number; i++){    //find sum of natural divisors
             if(number % i == 0) sum += i;   
         }
-        
-        if(number == sum) answer = true;     //compare sum of natural divisors and numbers. If they are equal this number is perfect
-        else answer = false;
-        
-        return answer;
+                              
+        return number == sum;  //compare sum of natural divisors and numbers. If they are equal this number is perfect
     }
     
-    public static String PerfectNumber(int number){
-        String answer;
+    public static String PerfectNumber(int number){        
         
-        if(recognizePerfectNumber(number)) answer = "perfect number";  //if number is perfect return "perfect number"
-        else answer = "not a perfect number";     //if number is notperfect return "not perfect number"
+        if(recognizePerfectNumber(number)) return "perfect number";  //if number is perfect return "perfect number"
         
-        return answer;
-            
+        return "not a perfect number";     //if number is notperfect return "not perfect number"       
+                    
     }
     
 }
