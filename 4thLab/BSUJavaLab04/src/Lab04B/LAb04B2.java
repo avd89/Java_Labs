@@ -13,11 +13,8 @@ package Lab04B;
 public class LAb04B2 {
     public static void main(String[] args){
         double distance = 123456.78;
-        double meters = Logic04B.calculateMeters(distance);
-        
-        double kilometers = Logic04B.calculateKilometers(distance);
-        
-        System.out.printf("%.3f centimeters is %.2f meters or %.2f kilometers\n", distance,meters,kilometers);
+                
+        System.out.printf("%.3f centimeters is %.2f meters or %.2f kilometers\n", distance,Logic04B.calculateMeters(distance),Logic04B.calculateKilometers(distance));
     }
     
 }

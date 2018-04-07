@@ -17,13 +17,10 @@ public class Lab04C5 {
         
         double a = 2.3;
         double b = 3.1;
-        
-        double average = Logic04C.getAverage(a, b);
-        double geometricMean = Logic04C.getGeometricMean(a, b);
-        
+                
         System.out.println("a = " + a + "; b = " + b);
-        System.out.println("Average of a and b is " + average);
-        System.out.printf("Geometric mean of a and b is %.2f\n", geometricMean);
+        System.out.println("Average of a and b is " + Logic04C.getAverage(a, b));
+        System.out.printf("Geometric mean of a and b is %.2f\n", Logic04C.getGeometricMean(a, b));
         
        
        

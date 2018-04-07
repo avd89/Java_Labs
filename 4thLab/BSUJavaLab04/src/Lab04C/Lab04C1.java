@@ -16,14 +16,10 @@ package Lab04C;
 public class Lab04C1 {
     public static void main(String[] args){
         double a =7.5;
-        
-        double area = Logic04C.calculateArea(a);
-        
-        double perimeter = Logic04C.calculatePerimeter(a);
-        
+                
         System.out.println("Square with a = " + a + ";");
-        System.out.println("Area = " + area);
-        System.out.println("Perimeter = " + perimeter);
+        System.out.println("Area = " + Logic04C.calculateArea(a));
+        System.out.println("Perimeter = " + Logic04C.calculatePerimeter(a));
     }
     
 }

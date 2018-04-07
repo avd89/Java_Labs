@@ -15,15 +15,11 @@ package Lab04C;
 public class Lab04C4 {
     public static void main(String[] args){
         
-        double a = 1.0;    //cube edge
-        
-        double amount = Logic04C.getCubeAmount(a);
-        
-        double area = Logic04C.getCubeArea(a);
+        double a = 1.0;    //cube edge               
         
         System.out.println("Cuble edge is " + a);
-        System.out.println("Cube amount is " +amount);
-        System.out.println("Cube area is " + area);
+        System.out.println("Cube amount is " + Logic04C.getCubeAmount(a));
+        System.out.println("Cube area is " + Logic04C.getCubeArea(a));
     }
     
 }

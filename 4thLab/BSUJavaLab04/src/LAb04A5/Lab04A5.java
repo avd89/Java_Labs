@@ -16,11 +16,9 @@ public class Lab04A5 {
         double a = Math.random()*20-10;
         double b = Math.random()*20-10;
         double c = Math.random()*20-10;
-        
-        boolean result = Logic04A5.determineOnlyOnePositiveNumber(a, b, c);
-        
+                
         System.out.println("a = " + a + "; b = " + b + "; c = " + c);
-        System.out.println("result: " + result);
+        System.out.println("result: " + Logic04A5.determineOnlyOnePositiveNumber(a, b, c));
         
     }
     

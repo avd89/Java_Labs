@@ -16,13 +16,9 @@ package Lab04B;
  */
 public class Lab04B3 {
     public static void main(String[] args){
-        double weight = 32456789.5;
-        
-        double weightInKilogramms = Logic04B.getWeightInKIlos(weight);
-        double weightInCenters = Logic04B.getWeightInCenters(weight);
-        double weightInTons = Logic04B.getWeightInTons(weight);
-        
-        System.out.printf("Dinosaur weight is:\n %.3f in grams or\n %.3f in kilograms or\n %.3f in centners or\n %.3f in tons\n", weight, weightInKilogramms, weightInCenters,  weightInTons);
+        double weight = 32456789.5;       
+               
+        System.out.printf("Dinosaur weight is:\n %.3f in grams or\n %.3f in kilograms or\n %.3f in centners or\n %.3f in tons\n", weight, Logic04B.getWeightInKIlos(weight), Logic04B.getWeightInCenters(weight),  Logic04B.getWeightInTons(weight));
         
     }
     

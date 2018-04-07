@@ -16,11 +16,8 @@ package Lab04B;
 public class Lab04B1 {
     public static void main(String[] args){
         long bytes = 23_365_443_465L;
-        double kilobytes = Logic04B.convertFileSizeFromBytesToKiloBytes(bytes);
-        double megabytes = Logic04B.convertFileSizeFromBytesToMegaBytes(bytes);
-        double gigabytes = Logic04B.convertFileSizeFromBytesToGigaBytes(bytes);
         
-        System.out.printf("%d bytes is %.3f kilobytes or %.3f megabytes or %.3f gigabytes", bytes, kilobytes, megabytes, gigabytes);
+        System.out.printf("%d bytes is \n%.3f kilobytes or \n%.3f megabytes or \n%.3f gigabytes\n", bytes, Logic04B.convertFileSizeFromBytesToKiloBytes(bytes), Logic04B.convertFileSizeFromBytesToMegaBytes(bytes), Logic04B.convertFileSizeFromBytesToGigaBytes(bytes));
     }
     
 }

@@ -17,14 +17,11 @@ public class Lab04B4 {
     public static void main(String[] args){
         Date currentDate = new Date(); //Getting current data
        //print current data about day time in hours, minutes,seconds
-        int dayTimeInHours = Logic04B.getDayTimeInHours();
-        int dayTimeInMinutes = Logic04B.getDayTimeInMinutes();
-        int dayTimeInSeconds = Logic04B.getDayTimeInSeconds();
-        
+                
         System.out.println("Current datee is : " + currentDate); //print current data
-        System.out.println(dayTimeInHours + " in hours or");      //print current data about day time in hours
-        System.out.println(dayTimeInMinutes + " in minutes or");  //print current data about day time in minutes
-        System.out.println(dayTimeInSeconds + " in seconds");   //print current data about day time in seconds
+        System.out.println(Logic04B.getDayTimeInHours() + " in hours or");      //print current data about day time in hours
+        System.out.println(Logic04B.getDayTimeInMinutes() + " in minutes or");  //print current data about day time in minutes
+        System.out.println(Logic04B.getDayTimeInSeconds() + " in seconds");   //print current data about day time in seconds
     }
     
 }

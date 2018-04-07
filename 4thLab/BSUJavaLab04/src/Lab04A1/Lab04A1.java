@@ -15,12 +15,10 @@ public class Lab04A1 {
         
         double a = Math.random() * 10;
         double b = Math.random() * 10;
-        double c = Math.random() * 10;
-        
-        boolean result = Logic04A1.compareThreeNumbersByInequality(a, b, c);
+        double c = Math.random() * 10;              
         
         System.out.println("a = " + a + "; b = " + b + "; c = " + c);
-        System.out.println("result: " + result);
+        System.out.println("result: " + Logic04A1.compareThreeNumbersByInequality(a, b, c));
     
     }
     

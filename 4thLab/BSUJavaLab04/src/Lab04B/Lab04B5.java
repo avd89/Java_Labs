@@ -21,11 +21,8 @@ public class Lab04B5 {
         System.out.println("Enter a number");//Enter a number
         
         number = scanner.nextInt();
-        int answer;
         
-        answer = Logic04B.getSumDigitsOfNumber(number);
-        
-        System.out.printf("Sum Digits of number %d is %d\n", number, answer); //return sum of number digits 
+        System.out.printf("Sum Digits of number %d is %d\n", number, Logic04B.getSumDigitsOfNumber(number)); //return sum of number digits 
         
     }
    

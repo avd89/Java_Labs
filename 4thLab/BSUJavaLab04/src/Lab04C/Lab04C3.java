@@ -14,15 +14,11 @@ package Lab04C;
  */
 public class Lab04C3 {
     public static void main(String[] args){
-        double r = 1.0;
-    
-        double perimeter = Logic04C.getCirclePerimeter(r);
-    
-        double area = Logic04C.getCircleArea(r);
+        double r = 1.0;           
     
         System.out.println("Circle radius is " + r);
-        System.out.printf("Circle perimeter is %.2f\n", perimeter);
-        System.out.printf("Circle area is %.2f\n", area);        
+        System.out.printf("Circle perimeter is %.2f\n", Logic04C.getCirclePerimeter(r));
+        System.out.printf("Circle area is %.2f\n", Logic04C.getCircleArea(r));        
         
     }  
     

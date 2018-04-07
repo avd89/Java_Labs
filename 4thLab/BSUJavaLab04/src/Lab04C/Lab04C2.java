@@ -16,13 +16,10 @@ public class Lab04C2 {
         
         double a = 4;
         double b = 3;
-    
-        double perimeter = Logic04C.getRectanglePerimeter(a, b);
-        double area = Logic04C.getRectangleArea(a, b);
-    
+        
         System.out.println("Rectangle sides size are " + a + " and " + b);
-        System.out.println("Rectangle perimeter is " + perimeter);
-        System.out.println("Rectangle area is " + area);       
+        System.out.println("Rectangle perimeter is " + Logic04C.getRectanglePerimeter(a, b));
+        System.out.println("Rectangle area is " + Logic04C.getRectangleArea(a, b));       
         
     }   
     

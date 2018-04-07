@@ -17,11 +17,9 @@ public class LAb04C6 {
         
         double a = 4.3;
         double b = 2.2;
-        
-        double max = Logic04C.getMaxNumber(a, b);
-        
+                
         System.out.println("a = " + a + " b = " + b);
-        System.out.println("the max number of a & b is " + max);
+        System.out.println("the max number of a & b is " + Logic04C.getMaxNumber(a, b));
     }
     
 }

@@ -46,22 +46,15 @@ public class Logic04B {
     
     public static int getDayTimeInSeconds(){ //get current data about day time in seconds
         GregorianCalendar currentCalendar = new GregorianCalendar();
-        
-        int dayHour = currentCalendar.get(Calendar.HOUR_OF_DAY);
-        int dayMinute = currentCalendar.get(Calendar.MINUTE);
-        int daySecond = currentCalendar.get(Calendar.SECOND);
-                
-        return daySecond + dayMinute*60 + dayHour*3600;
+                        
+        return currentCalendar.get(Calendar.SECOND) + currentCalendar.get(Calendar.MINUTE) * 60 + currentCalendar.get(Calendar.HOUR_OF_DAY) * 3600;
               
     }
     
     public static int getDayTimeInMinutes(){ //get current data about day time in minutes
         GregorianCalendar currentCalendar = new GregorianCalendar();
-        
-        int dayHour = currentCalendar.get(Calendar.HOUR_OF_DAY);
-        int dayMinute = currentCalendar.get(Calendar.MINUTE);
-                
-        return dayMinute + dayHour*60;
+                        
+        return currentCalendar.get(Calendar.MINUTE) + currentCalendar.get(Calendar.HOUR_OF_DAY) * 60;
               
     }
     
@@ -88,9 +81,8 @@ public class Logic04B {
     }
     
      public static int getSumDigitsOfNumber(int number){
-        int SumDigitsOfNumber=0;
-        
-        return getSumDigitsOfNumberReq(number,SumDigitsOfNumber); 
+                
+        return getSumDigitsOfNumberReq(number,0); 
         
     }
      

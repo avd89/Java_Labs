@@ -15,11 +15,9 @@ public class LAb04A2 {
         double a = 10.4;
         double b = -10.4;
         double c = 8.2;
-        
-        boolean result = Logic04A2.findNumberEquality(a, b, c);
-        
+                
         System.out.println("a = " + a + "; b = " + b + "; c = " + c);
-        System.out.println("result: " + result);
+        System.out.println("result: " + Logic04A2.findNumberEquality(a, b, c));
     }
     
 }

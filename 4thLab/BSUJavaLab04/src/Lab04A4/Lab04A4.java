@@ -16,11 +16,9 @@ public class Lab04A4 {
         double a = Math.random()*10-5;
         double b = Math.random()*10-5;
         double c = Math.random()*10-5;
-        
-        boolean result = Logic04A4.determineAtLeastOnePositiveNumber(a, b, c);
-        
+                
         System.out.println("a = " + a + "; b = " + b + "; c = " + c);
-        System.out.println("result: " + result);
+        System.out.println("result: " + Logic04A4.determineAtLeastOnePositiveNumber(a, b, c));
     }
     
 }
