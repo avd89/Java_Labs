@@ -17,6 +17,7 @@ public class Lab05x07 {
     public static void main(String[] args){
         
         int number = UserInput.input("Enter a number :\n");
+        
         View.print("The number " + number + " written manually : " + NumberToWord.convertNumberToWord(number) +"\n");
         
     }
