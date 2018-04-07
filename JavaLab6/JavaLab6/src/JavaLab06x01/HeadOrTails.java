@@ -24,9 +24,9 @@ import java.util.Random;
 public class HeadOrTails {
     
 
-    private static boolean getRandomBoolean() {   //get random boolean
-        Random random = new Random();
-        return random.nextBoolean();
+    private static boolean RandomBoolean() {   //get random boolean
+       
+        return new Random().nextBoolean();
     }
 
     private static int ThrowCoinReturnHeadQuantity(int ThrowQuantity) {   //get random head quantity result for specified number of throws
@@ -34,7 +34,7 @@ public class HeadOrTails {
 
         for (int i = 0; i < ThrowQuantity; i++) {
             
-            if (getRandomBoolean()) {   //if result of throwing is true add 1 to head quantity
+            if (RandomBoolean()) {   //if result of throwing is true add 1 to head quantity
                 HeadQuantity++;
             } 
         }
