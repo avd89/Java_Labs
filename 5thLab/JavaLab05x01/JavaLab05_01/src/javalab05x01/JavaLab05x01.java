@@ -23,17 +23,14 @@ public class JavaLab05x01 {
         
         int N; //Dragon age
         int resultHead; //Dragon head quantity
-        int resultEyes; //Dragon eyes quantity
-                            
+                                    
         N = UserInput.input("Enter Dragon age "); //Enter dragon age
         
         resultHead = DragonHead.getDragonHeadQuantity(N); //calculate dragon head quantity
+                        
+        View.print("dragon head quantity is " + DragonHead.getDragonHeadQuantity(N) + "\n"); //calculate and output dragon heads quantity
         
-        resultEyes = DragonHead.getDragonEyesQuantity(resultHead);
-        
-        View.print("dragon head quantity is " + resultHead + "\n"); //output dragon heads quantity
-        
-        View.print("dragon eyes quantity is " + resultEyes + "\n"); //output dragon eyes quantity
+        View.print("dragon eyes quantity is " + DragonHead.getDragonEyesQuantity(resultHead) + "\n"); //output dragon eyes quantity
         
     }
     
