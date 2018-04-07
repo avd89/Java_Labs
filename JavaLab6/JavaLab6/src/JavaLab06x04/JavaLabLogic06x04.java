@@ -114,13 +114,9 @@ public class JavaLabLogic06x04 {
 
     //method that check palindrome number
     public static boolean checkPalindromeNumber(long number) {  //check palindrome number
-
-        boolean answer = false;
-
-        if (getReverseNumber(number) == number) {
-            answer = true;
-        }
-        return answer;
+        
+        return (getReverseNumber(number) == number);
+        
     }
 
     // method thar realise interface for the method that getermine palindrome number 
@@ -135,17 +131,15 @@ public class JavaLabLogic06x04 {
 
     // method that check prime number
     public static boolean checkPrimeNumber(long number) {  //Check simple number
-
-        boolean answer = true;
+        
         for (int i = 1; i < number; i++) {
             if (number % i == 0) {
                 if (i != 1 && i != number) {
-                    answer = false;
-                    break;
+                    return false;                    
                 }
             }
         }
-        return answer;
+        return true;
     }
 
     // method thar realise interface for the method that getermine prime number 
@@ -173,7 +167,7 @@ public class JavaLabLogic06x04 {
     }
 
     // method that get greatest common divisor
-    public static long getGreatestCommonDivisor(long numberOne, long numberTwo) {   //method that return greatest common divisor (using euclidean algorithm)
+    public static long GreatestCommonDivisor(long numberOne, long numberTwo) {   //method that return greatest common divisor (using euclidean algorithm)
 
         while (numberOne != numberTwo) {
             if (numberOne > numberTwo) {
@@ -186,9 +180,9 @@ public class JavaLabLogic06x04 {
     }
 
     // method that get least common multiple
-    public static long getLeastCommonMultiple(long numberOne, long numberTwo) {   //method that return least common multiple
+    public static long LeastCommonMultiple(long numberOne, long numberTwo) {   //method that return least common multiple
 
-        return numberOne * (numberTwo / getGreatestCommonDivisor(numberOne, numberTwo));
+        return numberOne * (numberTwo / GreatestCommonDivisor(numberOne, numberTwo));
 
     }
    
