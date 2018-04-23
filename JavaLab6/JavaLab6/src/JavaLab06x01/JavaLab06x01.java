@@ -24,7 +24,10 @@ public class JavaLab06x01 {
     public static void main(String[] args) {
 
         int coinThrowQuantity = UserInput.input("Enter coin throw quantity "); //enter coin throw quantity
-        HeadOrTails.ThrowCoin(coinThrowQuantity);     //output head and tails quantity
+        int headQuantity = HeadOrTails.throwCoinReturnHeadQuantity(coinThrowQuantity); //get head coins quantity    
+        
+        View.print("Head quantity is " + headQuantity);  //print head coins quantity
+        View.print("Tails quantity is " + (coinThrowQuantity - headQuantity)); //print tails coins quantity
  
     }
 

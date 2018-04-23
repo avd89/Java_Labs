@@ -22,31 +22,17 @@ import java.util.Random;
  * v 1.0
  */
 public class HeadOrTails {
-    
 
-    private static boolean RandomBoolean() {   //get random boolean
-       
-        return new Random().nextBoolean();
-    }
+    public static int throwCoinReturnHeadQuantity(int throwQuantity) {   //get random head quantity result for specified number of throws
+        int headQuantity = 0;    //head quantity result
+        Random random = new Random();
 
-    private static int ThrowCoinReturnHeadQuantity(int ThrowQuantity) {   //get random head quantity result for specified number of throws
-        int HeadQuantity = 0;    //head quantity result
+        for (int i = 0; i < throwQuantity; i++) {
 
-        for (int i = 0; i < ThrowQuantity; i++) {
-            
-            if (RandomBoolean()) {   //if result of throwing is true add 1 to head quantity
-                HeadQuantity++;
-            } 
+            if (random.nextBoolean()) {   //if result of throwing is true add 1 to head quantity
+                headQuantity++;
+            }
         }
-        return HeadQuantity;     //return head quantity result
-    }
-    
-    public static void ThrowCoin(int ThrowQuantity){
-        
-        int HeadQuantity = ThrowCoinReturnHeadQuantity(ThrowQuantity); //get head quantity result
-        
-        System.out.println("Head quantity is " + HeadQuantity);   //print head quantity result
-        System.out.println("Tails quantity is " + (ThrowQuantity - HeadQuantity));  //print tails quantity result  (tails =  ThrowQuantity - HeadQuantity)     
-        
+        return headQuantity;     //return head quantity result
     }
 }

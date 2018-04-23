@@ -26,21 +26,13 @@ package JavaLab06x02;
 public class PerfectNumber {
     
     public static boolean recognizePerfectNumber(int number){  //method that recognize perfect number
-        int sum = 0;
+        int sum = 1;
                 
-        for(int i = 1; i < number; i++){    //find sum of natural divisors
+        for(int i = 2; i < number / 2 + 1; i++){    //find sum of natural divisors
             if(number % i == 0) sum += i;   
         }
                               
         return number == sum;  //compare sum of natural divisors and numbers. If they are equal this number is perfect
-    }
-    
-    public static String PerfectNumber(int number){        
-        
-        if(recognizePerfectNumber(number)) return "perfect number";  //if number is perfect return "perfect number"
-        
-        return "not a perfect number";     //if number is notperfect return "not perfect number"       
-                    
-    }
-    
+    } 
+      
 }

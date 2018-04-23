@@ -17,14 +17,14 @@ import JavaLab06x01.UserInput;
 public class JavaLab06x05 {
 
     public static void main(String[] args) {
-        
-        int lowerRangeNumber = UserInput.input("Enter lower range number ");  //Enter random number range (lower range limit)
-        int upperRangeNumber = UserInput.input("Enter upper range number ");  //Enter random number range (upper range limit)
-        int attemptQuantity = UserInput.input("Enter attempt quantity ");     //Enter quantity of attempts to guess number
-            
+
         while (true) {  //repeat game untill user won't answer "yes" for the question "Do you want to continue ?" from the Complete.complete method
-            
-            TryToGuessTheNumber.GuessTheNumber(lowerRangeNumber, upperRangeNumber, attemptQuantity);  // Play the game
+
+            int lowerRangeNumber = UserInput.input("Enter lower range number ");  //Enter random number range (lower range limit)
+            int upperRangeNumber = UserInput.input("Enter upper range number ");  //Enter random number range (upper range limit)
+            int attemptQuantity = UserInput.input("Enter attempt quantity ");     //Enter quantity of attempts to guess number
+
+            TryToGuessTheNumber.guessTheNumber(lowerRangeNumber, upperRangeNumber, attemptQuantity);  // Play the game
 
             if (!Complete.complete("Do you want to continue ?")) {  //repeated request. If not "yes" the game is ends
                 break;

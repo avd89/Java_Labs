@@ -27,8 +27,17 @@ public class JavaLab06x02 {
     public static void main(String[] args){
         
         int number = UserInput.input("enter your number ");     //Enter your number
-        View.print("Your number is " + PerfectNumber.PerfectNumber(number) +"\n");    //recognize perfect number             
+        
+        if(PerfectNumber.recognizePerfectNumber(number)) {  //if number is perfect method return true
             
+            View.print(number + " is a perfect number"); 
+            
+        }
+        else {
+            
+            View.print(number + " is not a perfect number");
+        }
+        
     }     
        
 }
