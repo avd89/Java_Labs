@@ -21,8 +21,8 @@ public class JavaLab06x04x07 {
 
             long numberOne = UserInput.input("Enter first number ");   //enter first number
             long numberTwo = UserInput.input("Enter second number ");  //enter second number
-            View.print("The least common miltiple of " + numberOne + " and " + numberTwo + " is " + JavaLabLogic06x04.LeastCommonMultiple(numberOne, numberTwo));  //determine least common multiple of the two numbers
-            View.print("The greatest common divisor of " + numberOne + " and " + numberTwo + " is " + JavaLabLogic06x04.GreatestCommonDivisor(numberOne, numberTwo)); //determine greatest common divisor of the two numbers 
+            View.print("The least common miltiple of " + numberOne + " and " + numberTwo + " is " + JavaLabLogic06x04.leastCommonMultiple(numberOne, numberTwo));  //determine least common multiple of the two numbers
+            View.print("The greatest common divisor of " + numberOne + " and " + numberTwo + " is " + JavaLabLogic06x04.greatestCommonDivisor(numberOne, numberTwo)); //determine greatest common divisor of the two numbers 
 
             if (!Complete.complete("Do you want to continue ? ")) {  //repeated request
                 break;

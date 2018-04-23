@@ -167,7 +167,7 @@ public class JavaLabLogic06x04 {
     }
 
     // method that get greatest common divisor
-    public static long GreatestCommonDivisor(long numberOne, long numberTwo) {   //method that return greatest common divisor (using euclidean algorithm)
+    public static long greatestCommonDivisor(long numberOne, long numberTwo) {   //method that return greatest common divisor (using euclidean algorithm)
 
         while (numberOne != numberTwo) {
             if (numberOne > numberTwo) {
@@ -180,9 +180,9 @@ public class JavaLabLogic06x04 {
     }
 
     // method that get least common multiple
-    public static long LeastCommonMultiple(long numberOne, long numberTwo) {   //method that return least common multiple
+    public static long leastCommonMultiple(long numberOne, long numberTwo) {   //method that return least common multiple
 
-        return numberOne * (numberTwo / GreatestCommonDivisor(numberOne, numberTwo));
+        return numberOne * (numberTwo / greatestCommonDivisor(numberOne, numberTwo));
 
     }
    

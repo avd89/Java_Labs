@@ -17,26 +17,15 @@ import java.util.Scanner;
  */
 public class TryToGuessTheNumber {
 
-    Scanner scanner = new Scanner(System.in);
-
-    //method that get random number from preset range
-    private static int getRandomNumber(int lowRandomNumber, int hightRandomNumber) {
-        Random rand = new Random();
-
-        return rand.nextInt(hightRandomNumber - lowRandomNumber) +1;
-
-    }
-
     //method that emulate game "Try to guess the number"
     public static void guessTheNumber(int lowRandomNumber, int hightRandomNumber, int attemptQuantity) {
         
         int count = 0;  //attempts counter
         int enteredNumber;  //enterred number by user
-
-        int randNumber = getRandomNumber(lowRandomNumber, hightRandomNumber);  // get random number
+        Random rand = new Random();
+        
+        int randNumber = rand.nextInt(hightRandomNumber - lowRandomNumber) +1;  // get random number from preset range
         Scanner scanner = new Scanner(System.in);
-
-
         
         while (true) {    //cycle that repeat attemps to quess the number untill user will guess the number or attemps will end
 
