@@ -39,7 +39,7 @@ public class JavaLabLogic06x04 {
     }
 
     // method that count quantity digits of a number
-    public static int countQuantityOfNumberDigit(long number) {  //get count of number digits 
+    public static int countQuantityOfNumberDigit(long number) {  // get count of number digits 
         int quantity = 1;
 
         number = number > 0 ? number : -number;

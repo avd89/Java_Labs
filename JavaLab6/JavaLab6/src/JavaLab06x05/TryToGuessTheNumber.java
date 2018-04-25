@@ -24,7 +24,7 @@ public class TryToGuessTheNumber {
         int enteredNumber;  //enterred number by user
         Random rand = new Random();
         
-        int randNumber = rand.nextInt(hightRandomNumber - lowRandomNumber) +1;  // get random number from preset range
+        int randNumber = rand.nextInt(hightRandomNumber - lowRandomNumber) +1;  //  get random number from preset range
         Scanner scanner = new Scanner(System.in);
         
         while (true) {    //cycle that repeat attemps to quess the number untill user will guess the number or attemps will end
@@ -46,7 +46,7 @@ public class TryToGuessTheNumber {
                 System.out.println("Lower");
             }
 
-            if (count == attemptQuantity) { //user use all attempts but not guess the number
+            if (count == attemptQuantity) { // user use all attempts but not guess the number
                 View.PrintEndPhrase();
                 System.out.println("Random number was " + randNumber);
                 System.out.println("You used " + count + " attempts");

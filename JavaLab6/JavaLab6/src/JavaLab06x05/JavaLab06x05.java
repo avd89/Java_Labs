@@ -20,9 +20,9 @@ public class JavaLab06x05 {
 
         while (true) {  //repeat game untill user won't answer "yes" for the question "Do you want to continue ?" from the Complete.complete method
 
-            int lowerRangeNumber = UserInput.input("Enter lower range number ");  //Enter random number range (lower range limit)
-            int upperRangeNumber = UserInput.input("Enter upper range number ");  //Enter random number range (upper range limit)
-            int attemptQuantity = UserInput.input("Enter attempt quantity ");     //Enter quantity of attempts to guess number
+            int lowerRangeNumber = UserInput.input("Enter lower range number ");  // Enter random number range (lower range limit)
+            int upperRangeNumber = UserInput.input("Enter upper range number ");  // Enter random number range (upper range limit)
+            int attemptQuantity = UserInput.input("Enter attempt quantity ");     // Enter quantity of attempts to guess number
 
             TryToGuessTheNumber.guessTheNumber(lowerRangeNumber, upperRangeNumber, attemptQuantity);  // Play the game
 
